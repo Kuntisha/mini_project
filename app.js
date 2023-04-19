@@ -10,9 +10,15 @@ app.set("views", path.join(__dirname, "views"))
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 app.get("/", (req, res) => {
     res.render("home");
 })
+
+app.get("/home2", (req, res) => {
+    res.render("home2");
+})
+
 app.get("/materials", (req, res) => {
     res.render("templates/materials");
 })
